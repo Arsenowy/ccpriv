@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","sources":["main.scss","_navbar.scss","_general.scss"],"sourcesContent":["@import \"navbar\";\n@import \"general\";\n","",""],"names":[],"mappings":""}
