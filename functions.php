@@ -30,7 +30,7 @@ function ccpriv_register_styles()
 {
   $version = wp_get_Theme()->get('Version');
   wp_enqueue_style('ccpriv-style', get_template_directory_uri() . "/style.css", array('ccpriv-bootstrap'), $version, 'all');
-  wp_enqueue_style('ccpriv-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css", array(), '4.4.1', 'all');
+  wp_enqueue_style('ccpriv-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css", array(), '5.0.3', 'all');
   wp_enqueue_style('ccpriv-fontawesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css", array(), '5.13.0', 'all');
   wp_enqueue_style('ccpriv-customCss', get_template_directory_uri() . "/assets/css/main.css", '', $version, 'all');
 }
@@ -39,9 +39,8 @@ add_action('wp_enqueue_scripts', 'ccpriv_register_styles');
 // adds dynamic js suport
 function ccpriv_register_scripts()
 {
-  // wp_enqueue_script('ccpriv-jquery', 'https://code.jquery.com/jquery-3.4.1.slim.min.js', array(), '3.4.1', true);
-  // wp_enqueue_script('ccpriv-popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', array(), '1.16.0', true);
-  wp_enqueue_script('ccpriv-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js', array(), '4.4.1', true);
+  wp_enqueue_script('ccpriv-jquery', 'https://code.jquery.com/jquery-3.4.1.slim.min.js', array(), '3.4.1', true);
+  wp_enqueue_script('ccpriv-bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', array(), '4.4.1', true);
   wp_enqueue_script('ccpriv-script', get_template_directory_uri() . "/assets/js/main.js", array(), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'ccpriv_register_scripts');

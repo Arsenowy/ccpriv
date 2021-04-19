@@ -1,0 +1,20 @@
+.btn-primary {
+  background-color: $color-primary;
+}
+
+.btn {
+  font-size: 1.4rem;
+  padding: 0.8rem 2rem;
+  text-transform: uppercase;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 1.2rem;
+  }
+  @include media-breakpoint-down(lg) {
+    font-size: 1.4rem;
+  }
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
