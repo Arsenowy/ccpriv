@@ -36,9 +36,9 @@
       );
       ?>
     </div>
-    <a class="btn btn-primary navbar__cta" href="#">
+    <a class="btn btn-primary navbar__cta" href="<?php the_field('navbar__cta--url'); ?>">
       <i class="fas fa-phone-alt navbar__cta--icon"></i>
-      Zadzwoń do nas
+      <?php the_field('navbar__cta--text'); ?>
     </a>
   </nav>
   <!-- END NAVBAR -->

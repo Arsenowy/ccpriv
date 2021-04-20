@@ -1,0 +1,28 @@
+.location {
+  padding: 8rem 1rem;
+  background-color: #f8f8f8;
+  &__box {
+    &--text {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 300;
+    }
+
+    &--select {
+      width: 80%;
+      max-width: 500px;
+      font-size: 1.6rem;
+      margin: 3rem auto;
+      border: 2px solid $color-primary;
+      &:focus {
+        border: 2px solid $color-primary;
+        box-shadow: 0 0 0.35rem rgba($color-primary, $alpha: 0.5);
+      }
+    }
+
+    &--map {
+      max-width: 800px;
+      margin: 3rem auto;
+    }
+  }
+}
