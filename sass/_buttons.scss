@@ -1,20 +1,30 @@
 .btn-primary {
   background-color: $color-primary;
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
+.btn-secondary {
+  background-color: $color-secondary;
+  &:hover {
+    background-color: $color-secondary-dark;
+  }
 }
 
 .btn {
   font-size: 1.4rem;
-  padding: 0.8rem 2rem;
+  padding: 1rem 2rem;
   text-transform: uppercase;
+  font-weight: 400;
+  margin-right: 2rem;
+  outline: none;
+  border: none;
+  letter-spacing: -0.2px;
 
   @include media-breakpoint-down(xl) {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
   }
   @include media-breakpoint-down(lg) {
     font-size: 1.4rem;
-  }
-
-  &:hover {
-    background-color: $color-primary-dark;
   }
 }

@@ -1,8 +1,10 @@
 * {
-  box-shadow: border-box;
+  box-sizing: border-box !important;
 }
 
 html {
+  // overflow-x: hidden;
+  max-width: 100%;
   font-size: 62.5%;
   @include media-breakpoint-down(lg) {
     font-size: 56.25%;
@@ -12,4 +14,8 @@ html {
 .row {
   margin: 0;
   padding: 0;
+}
+.main_wrap .row {
+  margin-left: 0px;
+  margin-right: 0px;
 }

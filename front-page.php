@@ -71,5 +71,34 @@
   </div>
 </section>
 
+<section class="app row">
+  <div class="offset-2 col-8 offset-md-0 col-md-6 col-lg-5 app__photo">
+    <?php
+    $appPhoto = get_field('app__photo');
+    ?>
+    <img class="app__photo--img" src="<?php echo $appPhoto['url'] ?>" alt="<?php echo $appPhoto['alt'] ?>">
+  </div>
+  <div class="col-md-6 offset-lg-1 ">
+    <div class="app__text">
+      <h3 class="app__text--title"><?php the_field('app__text--title') ?></h3>
+      <ul class="app__text--ul">
+        <li class="app__text--li"><?php the_field('app__text--list-1') ?></li>
+        <li class="app__text--li"><?php the_field('app__text--list-2') ?></li>
+        <li class="app__text--li"><?php the_field('app__text--list-3') ?></li>
+        <li class="app__text--li"><?php the_field('app__text--list-4') ?></li>
+        <li class="app__text--li"><?php the_field('app__text--list-5') ?></li>
+      </ul>
+      <h3 class="app__text--paragraph"><?php the_field('app__text--paragraph-1') ?></h3>
+      <div class="app__buttons">
+        <a href="<?php the_field('app__button1--url') ?>" class="btn btn-primary">
+          <?php the_field('app__button1--text') ?>
+        </a>
+        <a href="<?php the_field('app__button2--url') ?>" class="btn btn-secondary">
+          <?php the_field('app__button2--text') ?>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
 <?php get_footer(); ?>
