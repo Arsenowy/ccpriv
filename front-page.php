@@ -101,4 +101,17 @@
   </div>
 </section>
 
+<section class="contact row flex-column flex-md-row">
+  <div class="contact__col col-md-6 offset-0 col-xxl-5 offset-xxl-1">
+    <h3 class="contact__subtitle"><?php the_field('contact__subtitle') ?></h3>
+    <h2 class="contact__title"><?php the_field('contact__title') ?></h2>
+    <p class="contact__text"><?php the_field('contact__paragraph--1') ?></p>
+    <p class="contact__text"><?php the_field('contact__paragraph--2') ?></p>
+  </div>
+  <div class="contact__col col-xxl-5  col-md-6 justify-content-center align-items-center">
+    <?php echo do_shortcode('[contact-form-7 id="74" title="Formularz 1"]'); ?>
+  </div>
+</section>
+
+
 <?php get_footer(); ?>

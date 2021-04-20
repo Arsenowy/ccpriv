@@ -3,6 +3,9 @@
   &:hover {
     background-color: $color-primary-dark;
   }
+  &:disabled {
+    background-color: $color-primary-light;
+  }
 }
 .btn-secondary {
   background-color: $color-secondary;
