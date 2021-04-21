@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+<section id="section-buy" class="buy">
+
+</section>
 
 <section class="features row flex-row justify-content-between">
   <div class="features__box col-md-4">
@@ -54,7 +57,7 @@
   </div>
 </section>
 
-<section class="location">
+<section id="section-location" class="location">
   <div class="location__box row">
     <div class="location__box--text">Lista placówek</div>
     <select class="form-select location__box--select" aria-label="Default select example">
@@ -71,7 +74,7 @@
   </div>
 </section>
 
-<section class="app row">
+<section id="section-app" class="app row">
   <div class="offset-2 col-8 offset-md-0 col-md-6 col-lg-5 app__photo">
     <?php
     $appPhoto = get_field('app__photo');
@@ -101,7 +104,7 @@
   </div>
 </section>
 
-<section class="contact row flex-column flex-md-row">
+<section id="section-contact" class="contact row flex-column flex-md-row">
   <div class="contact__col col-md-6 offset-0 col-xxl-5 offset-xxl-1">
     <h3 class="contact__subtitle"><?php the_field('contact__subtitle') ?></h3>
     <h2 class="contact__title"><?php the_field('contact__title') ?></h2>
