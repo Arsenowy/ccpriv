@@ -18,7 +18,7 @@
     }
 
     &--text {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       text-transform: uppercase;
       color: #555;
       margin: 0 0.5rem;
@@ -28,8 +28,8 @@
       }
     }
     &--icon {
-      width: 5rem;
-      height: 5rem;
+      width: 4rem;
+      height: 4rem;
       margin: 0 0.5rem;
 
       @include media-breakpoint-down(md) {
