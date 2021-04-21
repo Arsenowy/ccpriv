@@ -36,9 +36,9 @@
       );
       ?>
     </div>
-    <a class="btn btn-primary navbar__cta" href="<?php the_field('navbar__cta--url'); ?>">
+    <a class="btn btn-primary navbar__cta" href="<?php the_field('cta-url'); ?>">
       <i class="fas fa-phone-alt navbar__cta--icon"></i>
-      <?php the_field('navbar__cta--text'); ?>
+      <?php the_field('cta-text'); ?>
     </a>
   </nav>
   <!-- END NAVBAR -->

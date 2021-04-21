@@ -113,5 +113,108 @@
   </div>
 </section>
 
+<section class="cards">
+
+  <div class="row gy-5">
+    <div class="col cards__box">
+      <!-- icon -->
+      <?php
+      $cardIcon = get_field('card1-icon');
+      ?>
+      <div class="cards__icon">
+        <img class="cards__icon--img" src=" <?php echo $cardIcon['url'] ?>" alt="<?php echo $cardIcon['alt'] ?>">
+      </div>
+      <!-- end icon -->
+      <h3 class="cards__title"><?php the_field('card1-title') ?></h3>
+      <p class="cards__text"><?php the_field('card1-text') ?></p>
+    </div>
+    <div class="col cards__box">
+      <!-- icon -->
+      <?php
+      $cardIcon = get_field('card2-icon');
+      ?>
+      <div class="cards__icon">
+        <img class="cards__icon--img" src=" <?php echo $cardIcon['url'] ?>" alt="<?php echo $cardIcon['alt'] ?>">
+      </div>
+      <!-- end icon -->
+      <h3 class="cards__title"><?php the_field('card2-title') ?></h3>
+      <p class="cards__text"><?php the_field('card2-text') ?></p>
+    </div>
+    <div class="col cards__box">
+      <!-- icon -->
+      <?php
+      $cardIcon = get_field('card3-icon');
+      ?>
+      <div class="cards__icon">
+        <img class="cards__icon--img" src=" <?php echo $cardIcon['url'] ?>" alt="<?php echo $cardIcon['alt'] ?>">
+      </div>
+      <!-- end icon -->
+      <h3 class="cards__title"><?php the_field('card3-title') ?></h3>
+      <p class="cards__text"><?php the_field('card3-text') ?></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col cards__box">
+      <!-- icon -->
+      <?php
+      $cardIcon = get_field('card4-icon');
+      ?>
+      <div class="cards__icon">
+        <img class="cards__icon--img" src=" <?php echo $cardIcon['url'] ?>" alt="<?php echo $cardIcon['alt'] ?>">
+      </div>
+      <!-- end icon -->
+      <h3 class="cards__title"><?php the_field('card4-title') ?></h3>
+      <p class="cards__text"><?php the_field('card4-text') ?></p>
+    </div>
+    <div class="col cards__box">
+      <!-- icon -->
+      <?php
+      $cardIcon = get_field('card5-icon');
+      ?>
+      <div class="cards__icon">
+        <img class="cards__icon--img" src=" <?php echo $cardIcon['url'] ?>" alt="<?php echo $cardIcon['alt'] ?>">
+      </div>
+      <!-- end icon -->
+      <h3 class="cards__title"><?php the_field('card5-title') ?></h3>
+      <p class="cards__text"><?php the_field('card5-text') ?></p>
+    </div>
+    <div class="col cards__box">
+      <!-- icon -->
+      <?php
+      $cardIcon = get_field('card6-icon');
+      ?>
+      <div class="cards__icon">
+        <img class="cards__icon--img" src=" <?php echo $cardIcon['url'] ?>" alt="<?php echo $cardIcon['alt'] ?>">
+      </div>
+      <!-- end icon -->
+      <h3 class="cards__title"><?php the_field('card6-title') ?></h3>
+      <p class="cards__text"><?php the_field('card6-text') ?></p>
+    </div>
+  </div>
+
+</section>
+
+<section class="mcards">
+  <div class="row">
+    <div class="col mcards__box">
+      <h3 class="mcards__title"><?php the_field('mcard1-title') ?></h3>
+      <p class="mcards__text"><?php the_field('mcard1-text') ?></p>
+    </div>
+    <div class="col mcards__box">
+      <h3 class="mcards__title"><?php the_field('mcard2-title') ?></h3>
+      <p class="mcards__text"><?php the_field('mcard2-text') ?></p>
+    </div>
+    <div class="col mcards__box">
+      <h3 class="mcards__title"><?php the_field('mcard3-title') ?></h3>
+      <p class="mcards__text"><?php the_field('mcard3-text') ?></p>
+    </div>
+  </div>
+  <a class="btn btn-primary" href="<?php the_field('cta-url'); ?>">
+    <i class="fas fa-phone-alt navbar__cta--icon"></i>
+    <?php the_field('cta-text'); ?>
+  </a>
+</section>
+
 
 <?php get_footer(); ?>

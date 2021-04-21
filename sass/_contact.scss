@@ -1,8 +1,9 @@
 .contact {
   background-color: #eee;
   padding: 4rem;
+  padding-bottom: 2rem;
   @include media-breakpoint-down(sm) {
-    padding: 4rem 0.5rem;
+    padding: 4rem 0.5rem 2rem 0.5rem;
   }
   &__col {
     padding: 6rem;
