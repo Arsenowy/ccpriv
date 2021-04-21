@@ -12,7 +12,8 @@ add_action('after_setup_theme', 'ccpriv_theme_support');
 function ccpriv_menus()
 {
   $locations = array(
-    'primary' => "Desktop Primary Menu"
+    'primary' => "Desktop Primary Menu",
+    'footer' => "Footer small menu"
   );
   register_nav_menus($locations);
 }
