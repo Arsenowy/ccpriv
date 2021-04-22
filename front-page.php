@@ -1,6 +1,88 @@
 <?php get_header(); ?>
 <section id="section-buy" class="buy">
-
+  <div class="buy__row">
+    <div class="buy__window">
+      <div class="buy__menu">
+        <div id="buy-menu-1" class="buy__menu--item left active">Kantor online</div>
+        <div id="buy-menu-2" class="buy__menu--item right">Kantor stacjonarny</div>
+      </div>
+      <div class="buy__bigbox">
+        <div id="window" class="d-flex px-5 py-4 flex-column flex-lg-row">
+          <div class="buy__list">
+            <h1 class="buy__list--title">Kup i sprzedaj kryptowaluty w kantorach CCPRIV</h1>
+            <ul class="buy__list--ul">
+              <li class="buy__list--li">w kantorach stacjonarnych w swoim mieście</li>
+              <li class="buy__list--li">na giełdzie CCPRIV</li>
+              <li class="buy__list--li">także bez rejestracji - za pomocą bonu lub bankomatu</li>
+            </ul>
+            <div class="buy__list--contact d-flex">
+              <div class="buy__list--contact-icon">
+                <a href="tel:121121212">
+                  <i class="fas fa-phone-alt"></i>
+                </a>
+              </div>
+              <div class="d-flex flex-column">
+                <div class="buy__list--contact-text">Masz pytania? Zadzwoń do nas!</div>
+                <div class="buy__list--contact-text-big">+48 58 573 36 33</div>
+              </div>
+            </div>
+          </div>
+          <div class="buy__form active">
+            <div class="buy__form--title">
+              Sprawdź kurs i zobacz ile z nami zyskasz!
+            </div>
+            <form action="">
+              <div class="buy__form--row">
+                <select name="" class="buy__form--control buy__form--select">
+                  <option value="pln">PLN</option>
+                  <option value="usd">USD</option>
+                  <option value="eur">EUR</option>
+                </select>
+                <input class="buy__form--control buy__form--input" type="text">
+              </div>
+              <div class="buy__form--row">
+                <select name="" class="buy__form--control buy__form--select">
+                  <option value="btc">BTC</option>
+                  <option value="eth">ETH</option>
+                  <option value="link">LINK</option>
+                  <option value="usdt">USDT</option>
+                  <option value="usdc">USDC</option>
+                </select>
+                <input class="buy__form--control buy__form--input" type="text">
+              </div>
+              <div class="buy__form--text">
+                Aktualny kurs
+                <span class="buy__form--text-color">
+                  1 BTC = 211497.13 PLN
+                </span>
+              </div>
+              <div class="buy__form--btngroup">
+                <a href="#" class="btn btn-primary-outline">Przelicz</a>
+                <a href="#" class="btn btn-primary">Kup online</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- second card -->
+        <div class="buy__map">
+          <!-- <div class="location__box row">
+            <div class="location__box--text">Lista placówek</div>
+            <select class="form-select location__box--select" aria-label="Default select example">
+              <option selected>Wyszukaj lub wpisz nazwę miasta</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div> -->
+          <div class="location__box">
+            <div class="location__box--map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" id="map" width="100%" height="400px" frameborder="0" style="border:0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="features row flex-row justify-content-between">
@@ -57,6 +139,7 @@
   </div>
 </section>
 
+<!-- ////////////////////////////////////////////////////////////////////////// -->
 <section id="section-location" class="location">
   <div class="location__box row">
     <div class="location__box--text">Lista placówek</div>
@@ -73,6 +156,7 @@
     </div>
   </div>
 </section>
+<!-- ////////////////////////////////////////////////////////////////////////// -->
 
 <section id="section-app" class="app row">
   <div class="offset-2 col-8 offset-md-0 col-md-6 col-lg-5 app__photo">
