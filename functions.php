@@ -40,8 +40,8 @@ add_action('wp_enqueue_scripts', 'ccpriv_register_styles');
 // adds dynamic js suport
 function ccpriv_register_scripts()
 {
-  wp_enqueue_script('ccpriv-jquery', 'https://code.jquery.com/jquery-3.4.1.slim.min.js', array(), '3.4.1', true);
-  wp_enqueue_script('ccpriv-bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', array(), '4.4.1', true);
+  wp_enqueue_script('ccpriv-jquery', 'https://code.jquery.com/jquery-3.6.0.slim.min.js', array(), '3.6.0', true);
+  wp_enqueue_script('ccpriv-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css', array(), '1', true);
   wp_enqueue_script('ccpriv-script', get_template_directory_uri() . "/assets/js/main.js", array(), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'ccpriv_register_scripts');

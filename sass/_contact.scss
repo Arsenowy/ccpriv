@@ -49,6 +49,15 @@
     border: 1px solid #fff;
     border-radius: 4px;
 
+    &--phone {
+      width: 90%;
+      margin-left: 3rem;
+      @include media-breakpoint-down(sm) {
+        margin: 0.5rem;
+        width: 100%;
+      }
+    }
+
     &:focus {
       border: 1px solid $color-primary;
     }
@@ -56,6 +65,7 @@
     &--box {
       display: flex;
       justify-items: space-between;
+      justify-content: space-between;
       @media screen and (max-width: 420px) {
         flex-direction: column;
       }
@@ -64,5 +74,22 @@
       min-height: 45px;
       height: 150px;
     }
+    &--acceptance {
+      & .wpcf7-list-item-label {
+        margin: 0 1rem 1rem;
+      }
+      & .wpcf7-list-item {
+        & > label {
+          display: flex;
+          align-content: center;
+        }
+      }
+    }
   }
+}
+
+.wpcf7-response-output {
+  border-color: $color-primary !important;
+  border-radius: 4px;
+  padding: 1rem;
 }

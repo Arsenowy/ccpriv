@@ -3,18 +3,21 @@ function changeActiveItem() {
   var menuEl2 = document.getElementById("buy-menu-2");
   var buyWindow = document.querySelector(".buy__window");
   var buyBox = document.querySelector(".buy__bigbox");
+  var findOffices = document.querySelector("#cantors-list-application");
 
   var h = document.querySelector("#window").offsetHeight;
   var map = document.querySelector("#map");
 
-  buyWindow.style.height = `${h + 50}px`;
-  map.height = `${h}px`;
   window.addEventListener("resize", reportWindowSize);
   function reportWindowSize() {
     h = document.querySelector("#window").offsetHeight;
     buyWindow.style.height = `${h + 50}px`;
-    map.height = `${h}px`;
+    map.style.height = `${h}px`;
   }
+
+  h = document.querySelector("#window").offsetHeight;
+  buyWindow.style.height = `${h + 50}px`;
+  map.style.height = `${h}px`;
 
   menuEl1.addEventListener("click", (el) => toggle(el), true);
   menuEl2.addEventListener("click", (el) => toggle(el), true);
@@ -30,6 +33,11 @@ function changeActiveItem() {
       else {
         buyBox.style.transform = `translateY(-${h}px`;
         menuEl1.classList.toggle("active");
+
+        h = document.querySelector("#window").offsetHeight;
+        buyWindow.style.height = `${h + 50}px`;
+        map.style.height = `${h}px`;
+        findOffices.style.display = `block`;
       }
       el.target.classList.toggle("active");
     }

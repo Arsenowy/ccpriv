@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="https://famatech.pl">
+  <link href="apps/rates/static/css/main.ddea169c.css" rel="stylesheet">
+  <link href="apps/offices/static/css/main.643e6659.css" rel="stylesheet">
   <title><?php wp_title() ?></title>
 
   <?php
@@ -36,7 +38,7 @@
       );
       ?>
     </div>
-    <a class="btn btn-primary navbar__cta" href="<?php the_field('cta-url'); ?>">
+    <a class="btn btn-primary navbar__cta" href="tel:<?php the_field('cta-url'); ?>">
       <i class="fas fa-phone-alt navbar__cta--icon"></i>
       <?php the_field('cta-text'); ?>
     </a>

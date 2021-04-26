@@ -50,8 +50,13 @@
       align-items: center;
       justify-content: center;
       font-size: large;
+      text-align: center;
       & > a {
         color: white;
+        text-align: center;
+        & > i {
+          transform: translate(0, 2px);
+        }
       }
     }
   }

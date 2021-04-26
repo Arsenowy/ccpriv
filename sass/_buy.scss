@@ -3,7 +3,7 @@
   padding: 8rem 4rem;
 
   @include media-breakpoint-down(sm) {
-    padding: 6rem 1rem;
+    padding: 3rem 1rem;
   }
 
   &__bigbox {
@@ -49,6 +49,10 @@
       cursor: pointer;
       transition: 0.2s ease-in-out all;
 
+      @include media-breakpoint-down(sm) {
+        font-size: 1.4rem;
+      }
+
       &.active {
         background-color: $color-primary;
         color: #fff;
@@ -69,7 +73,7 @@
     transition: ease-in-out all 0.3s;
 
     @include media-breakpoint-down(sm) {
-      padding: 2rem 1rem;
+      padding: 1rem;
     }
 
     &--title {
@@ -77,6 +81,9 @@
       color: #555;
       text-align: center;
       margin-bottom: 2rem;
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 1rem;
+      }
     }
 
     &--row {
@@ -134,6 +141,9 @@
     position: relative;
     padding: 2rem;
     transition: all ease-in-out 0.3s;
+    @include media-breakpoint-down(sm) {
+      padding: 1rem;
+    }
 
     &--title {
       font-size: 3rem;
@@ -142,6 +152,11 @@
       max-width: 540px;
       @include media-breakpoint-down(lg) {
         text-align: center;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 2rem;
+        margin: 0;
+        margin-bottom: 1.5rem;
       }
     }
 
@@ -154,6 +169,9 @@
       margin-top: 0.5rem;
       &:not(:last-child) {
         border-bottom: 1px solid #eee;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 1.4rem;
       }
     }
 
@@ -187,10 +205,26 @@
         margin: 0 1rem;
         letter-spacing: 0.4px;
         text-transform: uppercase;
+        & > a {
+          color: $color-primary;
+          text-decoration: none;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 1.8rem;
+          letter-spacing: -0.4px;
+          margin: 0;
+          margin-left: 1rem;
+        }
+        @media screen and (max-width: 350px) {
+          max-width: 150px;
+        }
       }
       &-text-big {
         font-weight: 500;
         font-size: 2.4rem;
+        @include media-breakpoint-down(sm) {
+          font-size: 2rem;
+        }
       }
     }
   }

@@ -21,7 +21,17 @@
     }
 
     &--map {
-      height: 375px;
+      height: 100%;
+      width: auto;
+
+      & > .wp_mapit_multipin_map {
+        // height: 100% !important;
+        width: 1050px !important;
+        // min-width: 0 !important;
+        // min-height: 0 !important;
+        // max-width: 9999px !important;
+        // max-height: 9999px !important;
+      }
     }
   }
 }
